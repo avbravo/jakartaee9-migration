@@ -16,17 +16,28 @@
     </h:head>
     <h:body>
         Hello from Facelets 1.6
-        <h:form>
-    
-            <jmoordbfaces:cssthemeindigodarken1/>
+        <h:form  id="form" prependId="false">
             
-                    <jmoordbfaces:label value="Jmoordblabel"/>
+   <p:outputLabel value="Jakarta EE 9 / jmoordbFaces 1.0. jmoordbUtils 3.0 "/>
+           
+            <p:messages id="messages"/>
+            <jmoordbfaces:cssthemeindigodarken1/>
+              <p:panelGrid columns="2"  styleClass="ui-panelgrid-blank ui-fluid"
+                           style="border:0px none; background-color:transparent;">
+                                 <jmoordbfaces:label value="Name"/>
+                                 <jmoordbfaces:pinputText value="#{helloController.name}"/>
                     
-                    <jmoordbfaces:email/>
+                  <jmoordbfaces:label value="Fecha"/>
             <p:datePicker/>
-            <p:outputLabel value="Jakarta EE 9"/>
-            <p:outputLabel value="Jmoordbjsf 2.0.3"/>
-            <p:commandButton value="Aceptar"/>
+          
+           
+            
+            <f:facet name="footer">
+                 <p:commandButton  action="#{helloController.saludar()}" value="Saludar" update=":form:messages"/>
+            </f:facet>
+                   
+              </p:panelGrid>
+                  
 
 
             <p:card style="width: 25rem; margin-bottom: 2em">

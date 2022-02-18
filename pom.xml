@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.avbravo</groupId>
     <artifactId>jakartaee9-migration</artifactId>
-    <version>1.0-2</version>
+    <version>1.0-3</version>
     <packaging>war</packaging>
     <name>jakartaee9-migration</name>
     
@@ -89,6 +89,28 @@ jmoordbstack
 	    <artifactId>jmoordbfaces</artifactId>
 	    <version>1.0</version>
 	</dependency>
+        <dependency>
+         <groupId>com.github.avbravo</groupId>
+            <artifactId>jmoordbutils</artifactId>
+            <version>3.0</version>
+        </dependency>
+        
+        <!--
+ utils
+-->
+   <dependency>
+            <groupId>org.eclipse.collections</groupId>
+            <artifactId>eclipse-collections-api</artifactId>
+            <version>10.4.0</version>
+        </dependency>
+        
+         <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+            <scope>provided</scope>
+        </dependency>
+    
     </dependencies>
     
     <build>

@@ -3,7 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:p="http://primefaces.org/ui"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jmoordbfaces="http://xmlns.jcp.org/jsf/composite/jmoordbfaces">
     <h:head>
         <title>Facelet Title</title>
         <style type="text/css">
@@ -14,11 +15,17 @@
         </style>
     </h:head>
     <h:body>
-        Hello from Facelets 1.1
+        Hello from Facelets 1.5
         <h:form>
-
-
+    
+            <jmoordbfaces:cssthemeindigodarken1/>
+            
+                    <jmoordbfaces:label value="Jmoordblabel"/>
+                    
+                    <jmoordbfaces:email/>
+            <p:datePicker/>
             <p:outputLabel value="Jakarta EE 9"/>
+            <p:outputLabel value="Jmoordbjsf 2.0.3"/>
             <p:commandButton value="Aceptar"/>
 
 
@@ -31,26 +38,26 @@
                     quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
 
             </p:card>
-            
+
             <p:card style="width: 25em">
-    <f:facet name="header">
-        <img alt="user header" src="../../resources/demo/images/usercard.png"/>
-    </f:facet>
-    <f:facet name="title">
-        Advanced Card
-    </f:facet>
-    <f:facet name="subtitle">
-        Card subtitle
-    </f:facet>
+                <f:facet name="header">
+                    <img alt="user header" src="../../resources/demo/images/usercard.png"/>
+                </f:facet>
+                <f:facet name="title">
+                    Advanced Card
+                </f:facet>
+                <f:facet name="subtitle">
+                    Card subtitle
+                </f:facet>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
-        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                    quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
 
-    <f:facet name="footer">
-        <p:commandButton icon="pi pi-check" value="Save"/>
-        <p:commandButton icon="pi pi-times" value="Cancel" styleClass="ui-button-secondary" style="margin-left: .5em"/>
-    </f:facet>
-</p:card>
+                <f:facet name="footer">
+                    <p:commandButton icon="pi pi-check" value="Save"/>
+                    <p:commandButton icon="pi pi-times" value="Cancel" styleClass="ui-button-secondary" style="margin-left: .5em"/>
+                </f:facet>
+            </p:card>
         </h:form>
     </h:body>
 </html>

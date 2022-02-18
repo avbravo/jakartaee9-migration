@@ -35,10 +35,10 @@
         <param-value>.xhtml .view.xml .jsp .jspx</param-value>
     </context-param>
     
-    <context-param>
+<!--    <context-param>
   <param-name>jakarta.faces.WEBSOCKET_ENDPOINT_PORT</param-name>
   <param-value>8000</param-value>
-</context-param>
+</context-param>-->
 
 
 

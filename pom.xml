@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.avbravo</groupId>
     <artifactId>jakartaee9-migration</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0-2</version>
     <packaging>war</packaging>
     <name>jakartaee9-migration</name>
     
@@ -18,6 +18,32 @@
         <jakartaee>9.0.0</jakartaee>
     </properties>
     
+    
+      <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>fish.payara.api</groupId>
+                <artifactId>payara-bom</artifactId>
+                <version>${version.payara}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>5.8.2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian</groupId>
+                <artifactId>arquillian-bom</artifactId>
+                <version>1.7.0.Alpha5</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>jakarta.platform</groupId>
@@ -32,6 +58,13 @@
             <version>3.0.0</version>
             <scope>provided</scope>
         </dependency>
+        
+       
+
+       
+            
+            <!--
+                -->
         <dependency>
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
@@ -71,6 +104,16 @@
             <groupId>jakarta.activation</groupId>
             <artifactId>jakarta.activation-api</artifactId>
             <version>2.0.1</version>
+        </dependency>
+<!--      <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>jmoordbjsf</artifactId>
+            <version>2.0.3</version>
+        </dependency>-->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>jmoordbfaces</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
     

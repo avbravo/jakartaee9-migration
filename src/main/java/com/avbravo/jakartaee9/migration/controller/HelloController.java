@@ -28,8 +28,8 @@ public class HelloController implements Serializable {
     public HelloController() {
     }
     
-    // <editor-fold defaultstate="collapsed" desc="method ">
-    public String saludo(){
+    // <editor-fold defaultstate="collapsed" desc=" String saludar()">
+    public String saludar(){
         JsfUtil.successMessage("Bienvenido "+ name + " a Jakarta EE 9.0");
 
         return "";
